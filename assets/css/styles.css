@@ -10,7 +10,7 @@ html {
 
 html, body{
     overflow-x: hidden;
-    font-family: 'Lemonada', cursive;
+    font-family: 'Petrona', serif;
 }
 
 h1,
@@ -18,14 +18,16 @@ h2,
 h3,
 h4,
 a{
-    color: #dffbff;
-    text-shadow: 5px 2px 5px #363b3b;
+    color: aliceblue;
+    text-shadow: 3px 1px 5px #363b3b;
 }
 
 section{
     /* min-width: 100vw; */
+    position: relative;
     min-height: 100vh;
     display: flex;
+    background-color: rgb(2, 2, 2);
 }
 
 .header{
@@ -33,6 +35,7 @@ section{
     width: 100%;
     top: 0%;
     background: #1d2020c7;
+    z-index: 1000;
 }
 
 .nav {
@@ -64,8 +67,37 @@ section{
     text-decoration: none;
 }
 
-
-.main-view,
-.main-view img{
+.home-content{
+    position: relative;
     min-width: 100%;
+    min-height: 100%;
+}
+
+.home-main-view{
+    min-width: 100%;
+}
+
+.home-main-text{
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+}
+
+.home-main-text h1{
+    font-size: 5rem;
+}
+
+.concert{
+    z-index: 5;
+    position: absolute;
+    min-width: 100%;
+    transform: translateY(-30%);
+}
+.concert-cut{
+    z-index: 10;
+    position: absolute;
+    min-width: 100%;
+    transform: translateY(-30%);
 }
