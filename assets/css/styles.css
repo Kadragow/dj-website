@@ -100,6 +100,16 @@ section{
     width: 100%;
     bottom: 0%;
 }
+
+.concert-reverse{
+    
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+    transform: translateY(-100%) rotate(180deg);
+}
+
 .concert-cut{
     z-index: 10;
     position: absolute;
